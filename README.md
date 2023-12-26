@@ -1,42 +1,39 @@
-Basic Social Media App API
-This API serves as the foundation for a basic social media application, equipped with features like friend request management, mutual friend identification, and sorting capabilities based on location.
+<p align="center">
+  <!-- Your App Logo or Banner (if available) -->
+</p>
 
-Setup
-Installation
-Clone the repository.
-Run composer install to install dependencies.
-Execute php artisan migrate --seed to initialize the database with sample data.
-Endpoints
-Friend Requests
-Accept a Friend Request
+# Basic Social Media App API
 
-Endpoint: POST /friend-request/accept/{request_id}
-Description: Accepts a pending friend request.
-Reject a Friend Request
+This API provides functionalities for a basic social media application, including friend requests, acceptance and rejection, mutual friends, and sorting by countries and states.
 
-Endpoint: POST /friend-request/reject/{request_id}
-Description: Rejects a pending friend request.
-Mutual Friends
-Retrieve Mutual Friends
-Endpoint: GET /friends/mutual/{user_id}
-Description: Retrieves a list of mutual friends between two users.
-Sorting
-Sort Friends by Country
+## Getting Started
 
-Endpoint: GET /friends/sort/country
-Description: Sorts friends by their country of residence.
-Sort Friends by State
+### Prerequisites
 
-Endpoint: GET /friends/sort/state
-Description: Sorts friends by their state/province.
-Postman Collection
-Explore and interact with the API using the provided Postman Collection:
-Postman Collection URL
+- PHP installed on your system
+- Composer for managing PHP dependencies
+- Postman for testing the API endpoints
 
-Contributing
-Contributions to this project are welcomed! Fork the repository, make your changes, and create a pull request for review.
+### Installation
 
-License
-This project is licensed under the MIT License.
+1. Clone this repository to your local machine.
+2. Run `composer install` in the project root directory to install PHP dependencies.
 
-Feel free to customize this further or add any specific details about your application. This README provides an overview of the API's functionalities and how to interact with 
+### Database Setup
+
+1. Configure your database settings in the `.env` file.
+2. Run `php artisan migrate --seed` to migrate the database tables and seed sample data.
+
+ 
+### Postman Collection
+
+Import the Postman collection from [this link](https://api.postman.com/collections/21322026-a2ab3bde-624c-4ace-8537-242f042b826a?access_key=PMAT-01HJJTD79S5FT9W73DNDJEA2Q6) to easily test the API endpoints.
+
+## Contributing
+
+Contributions are welcome! Fork this repository, make changes, and create a pull request. Let's improve this together.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
